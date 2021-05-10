@@ -1,0 +1,288 @@
+:root{
+    --colorBackgroundDark: #404852;
+    --colorTextDark: #ffffff;
+    --colorSelectObjectDark: #8f8e8e;
+
+    --colorBackgraundLight: #d9d9d9;
+    --colorTextLight: #2b343f;
+    --colorSelectObjectLight: #afafaf;
+}
+
+
+/*----------------------------------------------------------*/
+
+
+section{
+   background: var(--colorBackgroundDark);
+   
+}
+section.light{
+    background: var(--colorBackgraundLight);
+}
+
+
+
+
+.wallpaperPrincipal{
+    background: linear-gradient(rgba(0,0,0, 0.20) 0%, rgba(3, 1, 1, 0.20) 100%),url(/images/annie-spratt-QckxruozjRg-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 94.9vh;
+    background-attachment:fixed;
+    
+}
+
+
+/*----------------------------------------------------------*/
+
+
+/* All navegation bar */
+.navegation{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    margin-left: 50px;
+    margin-right: 70px;
+
+}
+
+
+/*----------------------------------------------------------*/
+
+
+/* Logo on nav dark*/
+.logoDiv{
+    font-family: 'Dela Gothic One';
+    font-size: 12px;
+    
+}
+.principalLogo{
+    color: var(--colorTextDark);
+}
+.principalLogo:link{
+    text-decoration: none;
+}
+.principalLogo:hover{
+    color: var(--colorSelectObjectDark);
+}
+/* Logo on nav light*/
+
+section.light .principalLogo{
+    color: var(--colorTextLight);
+}
+section.light .principalLogo:hover{
+    color: var(--colorSelectObjectLight );
+}
+
+/*----------------------------------------------------------*/
+
+
+/* Separator line on nav */
+.separatorLine{
+    width: 100%;
+    height: 0px;
+    border: 1px solid var(--colorTextDark);
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+/* Separator line on nav */
+section.light .separatorLine{
+    border: 1px solid var(--colorTextLight);
+}
+
+/* Links other pages on nav */
+
+.linksDiv{
+    display: inline-table;
+    float: right;
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.linksDiv a:hover{
+    font-weight: 800;
+    color: var(--colorSelectObjectDark);
+}
+section.light .linksDiv a:hover{
+    color: var(--colorSelectObjectLight);
+}
+
+.principalLinks{
+    color: var(--colorTextDark);
+}
+section.light .principalLinks{
+    color: var(--colorTextLight);
+}
+
+#linkProyects{
+    margin-right: 40px;
+}
+.principalLinks:link{
+    text-decoration: none;
+}
+
+/* Title Principal */
+
+.Title{
+    color: var(--colorTextDark);
+    margin: auto;
+    margin-top: 10%; 
+    width: max-content;
+    cursor:default ;
+}
+section.light .Title{
+    color: var(--colorTextLight);
+}
+
+/* .principalTitle{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-left: 30%;
+    font-family: 'Rokkitt';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 20px;
+    
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+} */
+.endTitle{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0%;
+    font-family: 'Rokkitt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 150px;
+    line-height: 150px;
+    text-shadow: 4px 6px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* Footer */
+
+.footer{
+    width: 100%;
+    height: 50px;
+}
+
+
+.containerAll{
+    margin-left: 5%;    
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+}
+
+.containerAll a{
+    text-decoration: none;
+    color: var(--colorTextDark);
+    margin-right: 20%;
+    font-size: 18px;   
+}
+.containerAll *:hover{
+    color: var(--colorSelectObjectDark);
+}
+
+
+section.light .containerAll a{
+    color: var(--colorTextLight);
+}
+section.light .containerAll *:hover{
+    color: var(--colorSelectObjectLight);
+}
+
+
+.idioms{
+    font-weight: 900;
+    cursor: pointer;
+}  
+.idioms i{
+    margin-left: 5px;
+    position: relative;
+    bottom: -1px;
+}
+
+
+
+
+
+/* Submenu idiom */
+
+.containerSubmenuIdioms{
+    position:relative;
+}
+.submenuIdioms{
+    display: none;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--colorBackgroundDark);
+    width: 3%;
+    position: absolute;
+    bottom: 30px;
+    left: 140px; 
+    z-index: 1000;  
+    box-shadow: 5px 7px 4px rgba(0, 0, 0, 0.25);
+}   
+section.light .submenuIdioms{
+    background-color: var(--colorBackgraundLight);
+}
+
+.submenuIdioms a{
+    text-decoration: none;
+    color: var(--colorTextDark);
+    display:table-cell;
+    padding-bottom: 15px;
+    text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.25);
+    font-family: 'Rokkitt';
+    font-weight: 600;
+    width: max-content;
+    display: block;
+}
+.submenuIdioms a:hover{
+    color: var(--colorSelectObjectDark);
+}
+
+section.light .submenuIdioms a{
+    color: var(--colorTextLight);
+}
+section.light .submenuIdioms a:hover{
+    color: var(--colorSelectObjectLight);
+}
+.submenuIdioms.active{
+    display: grid;
+}
+
+/* Theme */
+.iconTheme{
+    color: var(--colorTextDark);
+    cursor: pointer; 
+}
+.iconTheme:hover{
+    color: var(--colorSelectObjectDark);
+}
+
+section.light .iconTheme{
+    color: var(--colorTextLight);
+}
+section.light .iconTheme:hover{
+    color: var(--colorSelectObjectLight);
+}
+
+.iconTheme:before{
+    content:'\f185';
+    font-family: fontAwesome;
+}
+
+section.light .iconTheme:before{
+    content: '\f186';
+    font-family: fontAwesome;
+  
+}
